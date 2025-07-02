@@ -92,7 +92,7 @@ function App() {
             <img
               src="/assets/erasebg-transformed.png"
               alt="Profile"
-              className="w-[90vh] sm:w-60 md:w-80 lg:w-[350px] xl:w-[400px] 2xl:w-[500px] mx-auto z-10"
+              className="w-[100vh] sm:w-60 md:w-80 lg:w-[350px] xl:w-[400px] 2xl:w-[500px] mx-auto z-10"
             />
           </motion.div>
 
