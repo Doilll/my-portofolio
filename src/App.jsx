@@ -20,7 +20,7 @@ function App() {
     <div className="relative container mx-auto p-4 md:p-8 font-grotesk bg-brutal-bg text-brutal-text flex flex-col items-center">
       <header className="fixed top-0 left-0 w-full z-50 bg-brutal-bg">
         <nav className="container mx-auto flex items-center justify-center py-3 px-4 md:px-8">
-          <ul className="flex gap-1 md:gap-8">
+          <ul className="flex md:gap-8">
             <li>
               <a
                 href="#"
