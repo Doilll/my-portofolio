@@ -2,3 +2,10 @@
   background-image: url('/assets/bg-about.png');
 }
 
+[id]::before {
+  content: "";
+  display: block;
+  height: 100px; /* atau setara tinggi header */
+  margin-top: -100px;
+}
+

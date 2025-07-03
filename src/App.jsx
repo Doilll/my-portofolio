@@ -124,7 +124,7 @@ function App() {
               <h3 className="text-xl md:text-2xl font-bold mb-6 border-b-4 border-black pb-2 text-center">
                 PROYEK TERBARU
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                 <Project
                   nama="Klinikin Website"
                   imageUrl="/assets/frontend-klinikin.png"
