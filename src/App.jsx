@@ -83,23 +83,19 @@ function App() {
           id="about"
           className="shadow-[8px_8px_0px_#00FF85] about-me flex flex-col-reverse lg:flex-row items-center gap-8 border-2 border-brutal-border mx-auto relative mt-12 max-w-screen-lg px-4"
         >
-          {/* Text Box */}
           <div className="w-full lg:w-1/2">
             <div className="rounded-xl border-2 border-black bg-black shadow-[8px_8px_0px_#FF6B00] overflow-hidden flex flex-col min-h-[260px] relative">
-              {/* Mac window dots */}
               <div className="flex items-center p-2">
                 <span className="w-4 h-4 rounded-full bg-red-500 mr-1" />
                 <span className="w-4 h-4 rounded-full bg-yellow-400 mr-1" />
                 <span className="w-4 h-4 rounded-full bg-green-500" />
               </div>
-              {/* Gradient overlay */}
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-500 to-yellow-400 opacity-20 rounded-xl pointer-events-none" />
-              {/* Content */}
-              <div className="relative px-4 py-2 flex-1 overflow-auto">
+              <div className="relative px-4 py-2 flex-1 overflow-auto leading-relaxed">
                 <TypeWriter
                   subtitle="Saya adalah seorang mahasiswa jurusan sistem informasi dengan minat kuat pada pengembangan web modern dan sistem yang scalable. Berpengalaman dengan berbagai stack teknologi frontend maupun backend seperti Next.js, Express, React, Tailwind dan Laravel. Saya senang membangun solusi yang tidak hanya bekerja, tapi juga terstruktur dan efisien. Fokus saya saat ini adalah eksplorasi pada teknologi IoT untuk integrasi dengan web."
                   time={10}
-                  className="text-brutal-accent text-sm md:text-base"
+                  className="text-brutal-accent text-center text-sm md:text-base"
                 />
               </div>
             </div>
@@ -132,7 +128,7 @@ function App() {
               <h3 className="text-xl md:text-2xl font-bold mb-6 border-b-4 border-black pb-2 text-center">
                 PROYEK TERBARU
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch gap-y-12 md:gap-x-8">
                 <Project
                   nama="Klinikin Website"
                   imageUrl="/assets/frontend-klinikin.png"
@@ -173,12 +169,12 @@ function App() {
             <div
               ref={refSertif}
               id="sertifikat"
-              className="border-2 border-brutal-accent p-4 md:p-6 bg-brutal-card hover:shadow-[8px_8px_0px_#00FF85] transition"
+              className="border-2 border-brutal-accent p-4 md:p-8 bg-brutal-card hover:shadow-[8px_8px_0px_#00FF85] transition"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-6 border-b-4 border-black pb-2 text-center">
                 SERTIFIKAT
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-7">
                 <Sertifikat
                   nama="Responsive Web Design"
                   tahun="2024"
@@ -243,23 +239,31 @@ function App() {
                   href="https://github.com/Doilll"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center p-3 border-4 border-black bg-white hover:shadow-[8px_8px_0px_#FF6B00] hover:text-brutal-accent transition text-center"
+                  className="flex items-center justify-center p-3 border-2 border-black bg-white hover:shadow-[8px_8px_0px_#000] transition text-center text-sm"
                 >
-                  <img src="/assets/github.png" alt="GitHub" className="w-12" />
+                  <img src="/assets/github.png" alt="GitHub" className="w-5" />
                   GitHub
                 </a>
                 <a
                   href="https://www.linkedin.com/in/ahmad-fadhoil/"
-                  className="flex items-center justify-center p-3 border-4 border-black bg-white hover:shadow-[8px_8px_0px_#FF6B00] hover:text-brutal-accent transition text-center"
+                  className="flex items-center justify-center p-3 border-2 border-black bg-white hover:shadow-[8px_8px_0px_#000] transition text-center text-sm"
                 >
-                  <img src="/assets/linkedin.png" alt="LinkedIn" />
+                  <img
+                    src="/assets/linkedin.png"
+                    alt="LinkedIn"
+                    className="w-5"
+                  />
                   LinkedIn
                 </a>
                 <a
                   href="https://www.instagram.com/fadhoilahmd/"
-                  className="flex items-center justify-center p-3 border-4 border-black bg-white hover:shadow-[8px_8px_0px_#FF6B00] hover:text-brutal-accent transition text-center"
+                  className="flex items-center justify-center p-3 border-2 border-black bg-white hover:shadow-[8px_8px_0px_#000] transition text-center text-sm"
                 >
-                  <img src="/assets/instagram.png" alt="Instagram" />
+                  <img
+                    src="/assets/instagram.png"
+                    alt="Instagram"
+                    className="w-5"
+                  />
                   Instagram
                 </a>
               </div>
