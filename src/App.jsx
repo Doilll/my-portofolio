@@ -81,37 +81,45 @@ function App() {
         </div>
         <div
           id="about"
-          className="shadow-[8px_8px_0px_#00FF85] about-me flex flex-col-reverse lg:flex-row gap-8 border-2 border-brutal-border mx-auto relative mt-8 max-w-screen-lg px-4"
+          className="shadow-[8px_8px_0px_#00FF85] about-me flex flex-col-reverse lg:flex-row items-center gap-8 border-2 border-brutal-border mx-auto relative mt-12 max-w-screen-lg px-4"
         >
+          {/* Text Box */}
+          <div className="w-full lg:w-1/2">
+            <div className="rounded-xl border-2 border-black bg-black shadow-[8px_8px_0px_#FF6B00] overflow-hidden flex flex-col min-h-[260px] relative">
+              {/* Mac window dots */}
+              <div className="flex items-center p-2">
+                <span className="w-4 h-4 rounded-full bg-red-500 mr-1" />
+                <span className="w-4 h-4 rounded-full bg-yellow-400 mr-1" />
+                <span className="w-4 h-4 rounded-full bg-green-500" />
+              </div>
+              {/* Gradient overlay */}
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-500 to-yellow-400 opacity-20 rounded-xl pointer-events-none" />
+              {/* Content */}
+              <div className="relative px-4 py-2 flex-1 overflow-auto">
+                <TypeWriter
+                  subtitle="Saya adalah seorang mahasiswa jurusan sistem informasi dengan minat kuat pada pengembangan web modern dan sistem yang scalable. Berpengalaman dengan berbagai stack teknologi frontend maupun backend seperti Next.js, Express, React, Tailwind dan Laravel. Saya senang membangun solusi yang tidak hanya bekerja, tapi juga terstruktur dan efisien. Fokus saya saat ini adalah eksplorasi pada teknologi IoT untuk integrasi dengan web."
+                  time={10}
+                  className="text-brutal-accent text-sm md:text-base"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Image */}
           <motion.div
             initial={{ x: 100, opacity: 0, rotate: 8 }}
-            animate={{ x: 0, opacity: 1, rotate: 0 }}
+            whileInView={{ x: 0, opacity: 1, rotate: 0 }}
             transition={{ type: "spring", stiffness: 130, damping: 12 }}
-            className="flex justify-center"
+            viewport={{ once: true }}
+            className="w-full lg:w-1/2 flex justify-center"
           >
             <img
               src="/assets/erasebg-transformed.png"
               alt="Profile"
-              className="w-[90vh] flex items-end sm:w-60 md:w-[350px] lg:w-[700px] z-10 relative mx-auto"
+              className="w-full max-w-[300px] sm:max-w-[360px] md:max-w-[420px] lg:max-w-[480px] xl:max-w-[550px] mt-6 sm:mt-0 z-10 relative mx-auto border-4 border-black"
               loading="lazy"
             />
           </motion.div>
-
-          <div className="mt-4 lg:mt-0 w-full md:w-96 h-auto min-h-[240px] rounded-xl border-2 border-black relative bg-black shadow-[8px_8px_0px_#FF6B00] overflow-hidden flex flex-col">
-            <div className="flex items-center p-2">
-              <span className="w-4 h-4 rounded-full bg-red-500 mr-1 cursor-pointer" />
-              <span className="w-4 h-4 rounded-full bg-yellow-400 mr-1 cursor-pointer" />
-              <span className="w-4 h-4 rounded-full bg-green-500 cursor-pointer" />
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-500 to-yellow-400 opacity-20 rounded-xl pointer-events-none" />
-            <div className="relative px-4 py-2 flex-1 overflow-auto">
-              <TypeWriter
-                subtitle="Saya adalah seorang mahasiswa jurusan sistem informasi dengan minat kuat pada pengembangan web modern dan sistem yang scalable. Berpengalaman dengan berbagai stack teknologi frontend maupun backend seperti Next.js, Express, React, Tailwind dan Laravel. saya senang membangun solusi yang tidak hanya bekerja, tapi juga terstruktur dan efisien. Fokus saya saat ini adalah eksplorasi pada teknologi IoT untuk integrasi dengan web"
-                time={10}
-                className="text-brutal-accent text-sm md:text-base"
-              />
-            </div>
-          </div>
         </div>
 
         <div className="flex flex-col gap-8 mt-8 w-full justify-center items-center">
