@@ -215,6 +215,14 @@ function App() {
                   penerbit="Dicoding"
                   inView={inViewSertif}
                 />
+                <Sertifikat
+                  nama="Memulai Pemrograman dengan Python"
+                  tahun="2023"
+                  imageUrl="/assets/python-sertifikat.jpg"
+                  link="https://www.dicoding.com/certificates/4EXG4GG9GPRL"
+                  penerbit="Dicoding"
+                  inView={inViewSertif}
+                />
               </div>
             </div>
           </div>
