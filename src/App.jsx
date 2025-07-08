@@ -164,6 +164,14 @@ function App() {
                   link="https://github.com/Doilll/klinikin_laravel"
                   inView={inViewProjects}
                 />
+                <Project
+                  nama="Tandur Platform"
+                  imageUrl="/assets/tandur.png"
+                  deskripsi="untuk menghubungkan petani lokal dengan konsumen secara langsung, memotong rantai pasokan yang tidak adil dan memberikan 
+transparansi dalam proses pertanian."
+                  link="https://github.com/Doilll/tandur"
+                  inView={inViewProjects}
+                />
               </div>
             </div>
             <div
